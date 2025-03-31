@@ -1,0 +1,144 @@
+/* Main Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ban-list-sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+/* Button Styles */
+.discover-button {
+  background-color: #ffcb05;
+  color: #2a75bb;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discover-button:hover {
+  background-color: #ffde59;
+  transform: translateY(-2px);
+}
+
+.discover-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Attribute Buttons */
+.attribute-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.attribute-button {
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.attribute-button:hover {
+  background-color: #1a5a9c;
+  transform: scale(1.05);
+}
+
+/* Pokemon Display */
+.pokemon-display {
+  margin: 30px 0;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+h2 {
+  color: #2a75bb;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+/* Ban List Styles */
+.ban-list-container {
+  margin-top: 20px;
+}
+
+.ban-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ban-item {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.ban-item:hover {
+  background-color: #ffcdd2;
+}
+
+.remove-btn {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .ban-list-sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+}
