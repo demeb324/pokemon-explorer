@@ -55,7 +55,7 @@ GIF created with ScreenToGif
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Had some issues while making API calls and filtering it using components from the ban list.
 
 ## License
 
